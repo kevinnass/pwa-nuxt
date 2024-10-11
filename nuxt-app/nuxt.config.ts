@@ -1,15 +1,17 @@
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
-    "@vite-pwa/nuxt"
+    "@vite-pwa/nuxt",
+    '@nuxt/ui',
+    '@vueuse/nuxt',
   ],
   pwa: {
     manifest: {
       name: "pwa nuxt 3",
       short_name: "pwa nuxt",
       theme_color:'#8a8a5e',
-      description: "Arman Abi r.man.abi@gmail.com",
+      description: "yoooo",
       icons: [
         {
           src: 'image.png',
@@ -17,7 +19,6 @@ export default defineNuxtConfig({
           type: "image/png"
         },
       ]
-
 
     },
     workbox: {
@@ -29,5 +30,7 @@ export default defineNuxtConfig({
       type: "module"
     }
 
-  }
+  },
+
+  compatibilityDate: "2024-10-10"
 })
